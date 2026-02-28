@@ -1,0 +1,97 @@
+.page {
+  background: var(--white);
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #2F80ED;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.back:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0b1b2f;
+}
+
+.header p {
+  color: var(--gray-600);
+  max-width: 90ch;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chart {
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 28px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.chart h3 {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1a2b3c;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.stats > div {
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  padding: 18px 16px;
+  background: white;
+  transition: box-shadow 0.2s;
+}
+.stats > div:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+}
+
+.stats span {
+  color: var(--gray-600);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.stats strong {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0b1b2f;
+  font-variant-numeric: tabular-nums;
+}

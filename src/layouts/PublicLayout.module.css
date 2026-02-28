@@ -1,0 +1,80 @@
+.shell {
+  min-height: 100vh;
+  background: var(--white);
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.navInner {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+}
+
+.mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--gray-800);
+}
+
+.link {
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: 650;
+  text-decoration: none !important;
+}
+
+.link:hover {
+  background: var(--gray-100);
+}
+
+.active {
+  background: rgba(47, 128, 237, 0.12);
+  color: var(--primary);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main {
+  background: var(--white);
+}
+
+@media (max-width: 860px) {
+  .links {
+    display: none;
+  }
+}
+

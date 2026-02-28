@@ -1,0 +1,33 @@
+.card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.pad {
+  padding: 16px;
+}
+
+.header {
+  padding: 16px 16px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.subtle {
+  color: var(--gray-600);
+  font-size: 13px;
+}
+
+.body {
+  padding: 16px;
+}
+
